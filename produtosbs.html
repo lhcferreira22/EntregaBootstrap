@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>FullStack Eletro - Produtos</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilobs.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src='functionsbs.js'></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <nav class="container-fluid">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-brand" href="indexbs.html"><img src="./imagensbs/Full Stack.png" alt="logo"></a>
+            </li>
+            <li class="nav-item menutxt">
+                <a class="nav-link" href="produtosbs.html">Produtos</a>
+            </li>
+            <li class="nav-item menutxt">
+                <a class="nav-link" href="lojasbs.html">Nossas Lojas</a>
+            </li>
+            <li class="nav-item menutxt">
+                <a class="nav-link" href="contatobs.html">Fale Conosco</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Fim header-->
+
+    <div class="container-fluid">
+        <header>
+            <br>
+            <H2>PRODUTOS</H2>
+        </header>
+        <hr>
+        <br>
+
+        <h3>
+            Categorias
+        </h3>
+
+        <nav class="navbar bg-danger">
+
+            <ul class="navbar-nav ">
+                <li class="nav-item" onclick="exibir_todos()">
+                    <a class="nav-link">Todos(12)</a>
+                </li>
+                <li class="nav-item" onclick="exibir_categoria('geladeira')">
+                    <a class="nav-link">Geladeiras(3)</a>
+                </li>
+                <li class="nav-item" onclick="exibir_categoria('fogao')">
+                    <a class="nav-link">Fogões(2)</a>
+                </li>
+                <li class="nav-item" onclick="exibir_categoria('microondas')">
+                    <a class="nav-link">Microondas(3)</a>
+                </li>
+                <li class="nav-item" onclick="exibir_categoria('lavaroupas')">
+                    <a class="nav-link">Lavadora de Roupas(2)</a>
+                </li>
+                <li class="nav-item" onclick="exibir_categoria('lavaloucas')">
+                    <a class="nav-link">Lava-louças(2)<a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <!--Bloco-->
+        <div class="card-columns">
+            <div class="box_produto" id="geladeira" style="display: block">
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/geladeira_brastemp.jpg" width="120px" onclick="destaque(this)">
+            
+                    <p>Geladeira Frost Free Brastemp Side Inverse 540 litros</p>
+                    <hr>
+                    <p><strike>R$6.389,00</strike></p>
+                    <p class="preco">R$5.019,00</p>
+                    
+                </div>
+            </div>
+        </div>
+            <div class="card bg-light">
+                <div class="box_produto" id="geladeira" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/geladeira_brastemp_branca.jpg" width="120px" onclick="destaque(this)">
+                    
+                    <p>Geladeira Frost Free Brastemp Branca 375 litros</p>
+                    <hr>
+                    <p><strike>R$2.068,60</strike></p>
+                    <p class="preco">R$1.910,90</p>
+                </div>   
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="box_produto" id="geladeira" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/geladeira_consul_inox.jpg" width="120px" onclick="destaque(this)">
+                    
+                    <p>Geladeira Frost Free Consul Inox 340 litros</p>
+                    <hr>
+                    <p><strike>R$2.199,99</strike></p>
+                    <p class="preco">R$2.069,00</p>
+                </div>  
+                </div>
+            </div>
+        </div>
+        <!--Bloco-->
+        <div class="card-columns">
+
+            <div class="card bg-light">
+                <div class="box_produto" id="fogao" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/fogao_4bocas-vidro.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Fogão 4 Bocas Consul Inox com Mesa de Vidro</p>
+                    <hr>
+                    <p><strike>R$1.299,99</strike></p>
+                    <p class="preco">R$1.129,00</p>
+                </div> 
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="box_produto" id="fogao" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/fogao_4bocas_atlas_monaco.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Fogão de Piso 4 bocas Atlas Monaco com Acendimento Automático</p>
+                    <hr>
+                    <p><strike>R$609,90</strike></p>
+                    <p class="preco">R$519,70</p>
+                </div>  
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="box_produto" id="microondas" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/microondas_consul_32litros_inox_220v.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Microondas Consul 32 Litros Inox 220V</p>
+                    <hr>
+                    <p><strike>R$590,90</strike></p>
+                    <p class="preco">R$409,88</p>
+                </div> 
+                </div>
+            </div>
+        </div>
+
+        <!--Bloco-->
+        <div class="card-columns">
+
+            <div class="card bg-light">
+                <div class="box_produto" id="microondas" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/microondas_philco_espelhado.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>microondas Philco 25 Litros Espelhado 220V</p>
+                    <hr>
+                    <p><strike>R$508.70</strike></p>
+                    <p class="preco">R$464,53</p>
+                </div> 
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="box_produto" id="microondas" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/forno_microndas_eletrolux.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Forno Microondas Eletrolux 20 Litros Branco</p>
+                    <hr>
+                    <p><strike>R$459,90</strike></p>
+                    <p class="preco">R$436,05</p>
+                </div>   
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="box_produto" id="lavaloucas" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/lavalouca-electrolux-inox.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Lava Louça Inox com 10 serviços, 06 Programas de lavagem e Painel BlueTouch</p>
+                    <hr>
+                    <p><strike>R$3.599,00</strike></p>
+                    <p class="preco">R$2.799,90</p>
+                </div> 
+                </div>
+            </div>
+        </div>
+
+    <!--bloco-->
+        <div class="card-columns">
+
+            <div class="card bg-light">
+                <div class="box_produto" id="lavaloucas" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/lava-loca-compacta.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Lava Lava-louça Compacta 08 serviços Branca 127V Brastemp</p>
+                    <hr>
+                    <p><strike>R$1.970,50</strike></p>
+                    <p class="preco">R$1.730,61</p>
+                </div> 
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="box_produto" id="lavaroupas" style="display: block">
+                <div class="card-body text-center">
+                    <img src="./imagensbs/lavadora-roupas-brastemp-11kg-branca.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Lavadora de Roupas Brastemp 11Kg com Turbo Performance Branca</p>
+                    <hr>
+                    <p><strike>R$1.699,90</strike></p>
+                    <p class="preco">R$1.214,10</p>
+                </div> 
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="box_produto" id="lavaroupas" style="display: block">
+                <div class="card-body text-center">
+                    <img src="imagensbs/lavadora-roupas-philco-inverter.jpg"  width="120px" onclick="destaque(this)">
+                    
+                    <p>Lavadora de Roupas Philco Inverter 12Kg</p>
+                    <hr>
+                    <p><strike>R$2.399,90</strike></p>
+                    <p class="preco">R$2.179,90</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <div>
+        <!--imagem pagamento-->
+        <h4 class="text-center">Formas de pagamento</h4>
+        <img class="rounded mx-auto d-block" src="imagensbs/pagamento.png" width="200px">
+        <!--Fim imagem pagamento-->
+    </div>
+
+    <!--Footer-->
+    <div class="rodape">
+        <footer><strong>&copy;Recode Pro</strong></footer>
+    </div>
+
+    </div>
+    <!--Footer-->
+</body>
+
+</html>
